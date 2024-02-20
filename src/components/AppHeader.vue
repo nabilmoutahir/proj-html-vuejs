@@ -15,7 +15,9 @@
                     }
                 ],
 
-                slogan:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi!'
+                slogan:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi!',
+
+                headerLogo:'../assets/1logo/av-freelance-logo-retina.png'
 
             }
         },       
@@ -29,9 +31,11 @@
 <template>
 
     <header>
-        <div class="d-flex justify-content-between py-2 px-5">
+        <div class="d-flex justify-content-between py-4 px-5 mb-5">
             <div>
-                LOGO
+                <a href="#">
+                    <img src="../assets/1logo/av-freelance-logo-retina.png" alt="">
+                </a>
             </div>
 
             <div>
@@ -57,16 +61,16 @@
             </div>
         </div>
 
-        <div class="text-center">
+        <div class="text-center mt-5 py-5">
             <div>
                 AVADA FREELANCE
             </div>
 
-            <div>
-                ART DIRECTOR
-            </div>
+            <h1>
+                Art Director
+            </h1>
 
-            <div>
+            <div class="slogan">
                 {{ slogan }}
             </div>
         </div>
@@ -79,6 +83,24 @@
 
     header{
         height: 100vh;
+        background-color: black;
+        background-image: url(../assets/2banner/banner_images.jpg);
+        background-size: cover;
+        color: white;
+        font-size: small;
+
+        img{
+            height: 40px;
+        }
+
+        h1{
+            font-size: 5rem;
+            color: #FA225B;
+        }
+
+        .slogan{
+            color: #667290;
+        }
     }
 
 </style>
