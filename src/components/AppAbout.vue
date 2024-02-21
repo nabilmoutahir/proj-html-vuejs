@@ -7,11 +7,11 @@
 
             return {
 
+                store,
+
                 title:"About Me",
 
                 job:"UI & UX EXPERT",
-
-                store,
 
             }
 
@@ -64,11 +64,13 @@
 <style lang="scss" scoped>
 
     section{
-        font-size: small;
 
-        background-color: #20232c;
+        background-color: #191c23;
 
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+        .section-container{
+            background-color: #20232c;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+        }
 
         .sub-title{
             color: #667290;
