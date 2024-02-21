@@ -69,7 +69,7 @@
 
         .section-container{
             background-color: #20232c;
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
         }
 
         .sub-title{

@@ -12,9 +12,9 @@
                 title: 'Why Work With Me',
 
                 icons: {
-                    web: 'fa-solid fa-shield-cat',
-                    brand: 'fa-solid fa-shield-halved',
-                    ui: 'fa-regular fa-gem'
+                    iconWeb: 'fa-solid fa-shield-cat',
+                    iconBrand: 'fa-solid fa-shield-halved',
+                    iconUi: 'fa-regular fa-gem'
                 },
 
                 services: {
@@ -48,10 +48,10 @@
                 </p>
             </div>
 
-            <div class="text-white d-flex justify-content-center align-items-center">
+            <div class="text-white d-flex justify-content-center align-items-center mb-5">
                 <div class="mx-5">
                     <div class="circle d-flex justify-content-center align-items-center">
-                        <i :class="icons.web" href=""></i>
+                        <i :class="icons.iconWeb" href=""></i>
                     </div>
 
                     <div class="text-center py-3">
@@ -61,7 +61,7 @@
 
                 <div class="mx-5">
                     <div class="circle d-flex justify-content-center align-items-center">
-                        <i :class="icons.brand" href=""></i>
+                        <i :class="icons.iconBrand" href=""></i>
                     </div>
 
                     <div class="text-center py-3">
@@ -71,7 +71,7 @@
 
                 <div class="mx-5">
                     <div class="circle d-flex justify-content-center align-items-center">
-                        <i :class="icons.ui" href=""></i>
+                        <i :class="icons.iconUi" href=""></i>
                     </div>
 
                     <div class="text-center py-3">
@@ -79,10 +79,11 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
 
+        <div class="poly">
+
+        </div>
 
         
     </section>
@@ -91,10 +92,9 @@
 <style lang="scss" scoped>
 
     section{
-
-        background-color: #191c23;
-
-        clip-path: polygon();
+        .section-container{
+            background-color: #191c23;
+        }
 
         .sub-title{
             color: #667290;
