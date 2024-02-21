@@ -24,7 +24,7 @@
 <template>
     <section>
 
-        <div class="section-container py-5">
+        <div class="section-container">
             <div class="text-center py-3"> 
                 <h2 class="text-white">
                     {{ title }}
@@ -70,6 +70,7 @@
         .section-container{
             background-color: #20232c;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+            padding: 150px 0;
         }
 
         .sub-title{
