@@ -11,6 +11,8 @@ export default {
 
             title: 'Recent Work',
 
+            view: 'VIEW ALL WORK',
+
             images:[
                 'portfolio1_featured_item-600x480.jpg',
                 'portfolio2_featured_item-1200x960.jpg',
@@ -29,8 +31,8 @@ export default {
 
 <template>
     <section class="text-white">
-        <div class="section-top text-center">
-            <h2>
+        <div class="section-top">
+            <h2 class="overflow-hidden fs-1">
                 {{ title }}
             </h2>
 
@@ -39,7 +41,7 @@ export default {
             </div>
         </div>
 
-        <div>
+        <div class="m-0 p-0">
             <div class="row d-flex flex-wrap">
                 <div v-for="image in images" class="col-6 p-0">
                     <img :src="'/3portfolio/' + image" alt="">
@@ -47,11 +49,13 @@ export default {
             </div>
         </div>
 
-        <div class="section-bot">
-            <a href="#">
-                VIEW ALL WORK
-            </a>
-        </div>
+       <a href="">
+            <div class="section-bot text-center py-5">
+            
+                {{ view }}
+            
+            </div>
+       </a>
 
 
     </section>
@@ -63,6 +67,11 @@ export default {
 
     section{
         .section-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0;
             background-color: #87c856;
         }
 
@@ -73,9 +82,12 @@ export default {
 
         .section-bot{
             background-color: #f9225b;
+            font-size: smaller;
         }
 
         a {
+            margin: 0;
+            font-size: small;
             color: white;
             text-decoration: none;
         }
