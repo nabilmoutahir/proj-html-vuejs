@@ -1,6 +1,6 @@
 <script>
 
-  import AppHeader from './components/AppHeader.vue';
+  import AppComps from './components/AppComps.vue';
 
   export default {
 
@@ -11,7 +11,7 @@
     },
 
     components: {
-      AppHeader
+      AppComps
 
     }
 
@@ -23,7 +23,7 @@
 <template>
 
   <!-- APP HEADER -->
-    <app-header></app-header>
+    <app-comps></app-comps>
 
 </template>
 

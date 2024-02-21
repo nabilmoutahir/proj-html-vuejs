@@ -1,31 +1,17 @@
 <script>
+    
+    export default { 
 
-    export default {
-
-        data() {
-            return {
-                headerButtons: [
-                    {
-                        link: 'link',
-                        icon: 'icon'
-                    },
-                    {
-                        link: 'link',
-                        icon: 'icon'
-                    }
-                ],
-
-                slogan:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, modi!',
-
-                headerLogo:'../assets/1logo/av-freelance-logo-retina.png'
-
-            }
-        },       
-
-
-
-    }
-
+        // PROPS
+        props: {
+            img: String,
+            url: String,
+            icon: String,
+            name: String,
+            title: String,
+            slogan: String,
+            },
+    };
 </script>
 
 <template>
@@ -33,18 +19,18 @@
     <header>
         <div class="d-flex justify-content-between py-4 px-5 mb-5">
             <div>
-                <a href="#">
-                    <img src="../assets/1logo/av-freelance-logo-retina.png" alt="">
+                <a :href="url">
+                    <img :src="img" alt="">
                 </a>
             </div>
 
-            <div>
+            <div class="d-flex align-items-center">
                 <div>
-                    EMOJI
+                    {{ icon }}
                 </div>
 
                 <div>
-                    EMOJI
+                    {{ icon }}
                 </div>
             </div>
         </div>
@@ -63,11 +49,11 @@
 
         <div class="text-center mt-5 py-5">
             <div>
-                AVADA FREELANCE
+                {{ name }}
             </div>
 
             <h1>
-                Art Director
+                {{ title }}
             </h1>
 
             <div class="slogan">
@@ -84,7 +70,7 @@
     header{
         height: 100vh;
         background-color: black;
-        background-image: url(../assets/2banner/banner_images.jpg);
+        background-image: url(/2banner/banner_images.jpg);
         background-size: cover;
         color: white;
         font-size: small;
