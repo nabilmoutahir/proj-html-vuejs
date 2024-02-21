@@ -1,23 +1,23 @@
 <script>
 
-    import AppAbout from './AppAbout.vue';
+    import AppMainAbout from './AppMainAbout.vue';
 
-    import AppWhy from './AppWhy.vue';
+    import AppMainWhy from './AppMainWhy.vue';
+
+    import AppMainRecent from './AppMainRecent.vue';
 
     export default {
         data (){
-
             return {
 
-
             }
-
         },
 
         components:{
-            AppAbout, AppWhy
+            AppMainAbout, 
+            AppMainWhy,
+            AppMainRecent,
         }
-
     }
 
 
@@ -25,14 +25,11 @@
 
 <template>
 
-    <AppAbout/>
+    <AppMainAbout/>
 
-    <AppWhy/>
+    <AppMainWhy/>
 
-
-
-
-
+    <AppMainRecent/>
 
 </template>
 
