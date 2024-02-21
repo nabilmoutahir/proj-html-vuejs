@@ -6,6 +6,8 @@
 
     import AppMainRecent from './AppMainRecent.vue';
 
+    import AppMainQuote from './AppMainQuote.vue';
+
     export default {
         data (){
             return {
@@ -17,6 +19,7 @@
             AppMainAbout, 
             AppMainWhy,
             AppMainRecent,
+            AppMainQuote,
         }
     }
 
@@ -30,6 +33,8 @@
     <AppMainWhy/>
 
     <AppMainRecent/>
+
+    <AppMainQuote/>
 
 </template>
 

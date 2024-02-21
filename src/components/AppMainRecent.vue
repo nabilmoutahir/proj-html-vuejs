@@ -1,31 +1,31 @@
 <script>
 
-import { store } from '../store/store';
+    import { store } from '../store/store';
 
-export default {
-    data() {
+    export default {
+        data() {
 
-        return {
+            return {
 
-            store,
+                store,
 
-            title: 'Recent Work',
+                title: 'Recent Work',
 
-            view: 'VIEW ALL WORK',
+                view: 'VIEW ALL WORK',
 
-            images:[
-                'portfolio1_featured_item-600x480.jpg',
-                'portfolio2_featured_item-1200x960.jpg',
-                'portfolio3_featured_item-1200x960.jpg',
-                'portfolio4_featured_item-1200x960.jpg',
-                'portfolio5_featured_item-1200x960.jpg',
-                'portfolio6_featured_item-1200x960.jpg'
-            ]
-        }
+                images:[
+                    'portfolio1_featured_item-600x480.jpg',
+                    'portfolio2_featured_item-1200x960.jpg',
+                    'portfolio3_featured_item-1200x960.jpg',
+                    'portfolio4_featured_item-1200x960.jpg',
+                    'portfolio5_featured_item-1200x960.jpg',
+                    'portfolio6_featured_item-1200x960.jpg'
+                ]
+            }
 
-    },
+        },
 
-}
+    }
 
 </script>
 
