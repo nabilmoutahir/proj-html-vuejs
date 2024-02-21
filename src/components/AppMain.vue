@@ -2,6 +2,8 @@
 
     import AppAbout from './AppAbout.vue';
 
+    import AppWhy from './AppWhy.vue';
+
     export default {
         data (){
 
@@ -13,7 +15,7 @@
         },
 
         components:{
-            AppAbout,
+            AppAbout, AppWhy
         }
 
     }
@@ -25,6 +27,7 @@
 
     <AppAbout/>
 
+    <AppWhy/>
 
 
 
