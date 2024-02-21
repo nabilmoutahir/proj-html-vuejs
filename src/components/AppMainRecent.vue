@@ -44,7 +44,9 @@
         <div class="m-0 p-0">
             <div class="row d-flex flex-wrap">
                 <div v-for="image in images" class="col-6 p-0">
-                    <img :src="'/3portfolio/' + image" alt="">
+                    <a href="">
+                        <img :src="'/3portfolio/' + image" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -80,9 +82,19 @@
             object-fit: cover;
         }
 
+        img:hover{
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+        }
+
         .section-bot{
             background-color: #f9225b;
             font-size: smaller;
+        }
+
+        .section-bot:hover{
+            background-color: white;
+            color: #f9225b;
         }
 
         a {

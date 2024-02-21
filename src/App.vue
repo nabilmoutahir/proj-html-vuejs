@@ -34,7 +34,8 @@
 
   <!-- APP MAIN -->
     <app-main></app-main>
-
+    
+  <!-- APP FOOTER -->
     <app-footer-comp></app-footer-comp>
 
 </template>

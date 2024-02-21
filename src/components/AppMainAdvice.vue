@@ -52,7 +52,7 @@ export default {
         <div class="article-section d-flex align-content-center">
             <div v-for="(media, index) in medias">
                 <a href="#">
-                    <div>
+                    <div class="articles">
                         <img :src="'public/5advice/' + media" alt="">
                     </div>
 
@@ -91,6 +91,11 @@ export default {
         .article-section{
             background-color: #191c23;
             
+        }
+
+        .articles:hover{
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
         }
 
         .title-article{

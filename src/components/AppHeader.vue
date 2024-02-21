@@ -38,30 +38,36 @@
             </div>
         </div>
     
-        <div>
+        <!-- <div>
             <div>
-                <a href="">
-                    <div class="square m-2 rounded">
+                <div>
+                    <a href="">
+                        <div class="square1 m-2 rounded">
                     
-                    </div>
-                </a>
-
-                <a href="">
-                    <div class="square m-2 rounded">
+                        </div>
+                    </a>
+                </div>
                 
-                    </div>
-                </a>
+                <div>
+                    <a href="">
+                        <div class="square2 m-2 rounded">
+                
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
+        </div> -->
 
         <div class="text-center mt-5 py-5">
             <div>
                 {{ name }}
             </div>
 
-            <h1 class="overflow-hidden">
-                {{ title }}
-            </h1>
+            <a href="">
+                <h1 class="overflow-hidden">
+                    {{ title }}
+                </h1>
+            </a>
 
             <div class="slogan">
                 {{ slogan }}
@@ -82,11 +88,20 @@
         color: white;
         font-size: small;
 
-        // .square{
-        //     height: 30px;
+        // .square1{
+        //     right: 20px;
+        // }
+
+        // .square2 {
+        //     top: 180px;
+        //     right: 20px;
+        // }
+        // .square1, .square2{
+        //     height: 50px;
         //     aspect-ratio: 1;
         //     background-color: white;
-        //     position: sticky;
+        //     position: fixed;
+        //     z-index: 1;
         // }
 
         a{
