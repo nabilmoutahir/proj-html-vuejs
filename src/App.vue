@@ -1,6 +1,10 @@
 <script>
 
+  
+  import AppMain from './components/AppMain.vue';
+
   import AppComps from './components/AppComps.vue';
+
 
   export default {
 
@@ -11,7 +15,8 @@
     },
 
     components: {
-      AppComps
+      AppComps, 
+      AppMain
 
     }
 
@@ -24,6 +29,9 @@
 
   <!-- APP HEADER -->
     <app-comps></app-comps>
+
+  <!-- APP MAIN -->
+    <app-main></app-main>
 
 </template>
 

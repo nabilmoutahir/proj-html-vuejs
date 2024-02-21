@@ -1,4 +1,5 @@
 <script>
+
     import AppHeader from './AppHeader.vue';
 
     export default {
@@ -27,13 +28,13 @@
 
 <template>
 
-    <AppHeader 
-    :img="headerItem.img" 
-    :url="headerItem.url"
-    :icon="headerItem.icon"
-    :name="headerItem.name"
-    :title="headerItem.title"
-    :slogan="headerItem.slogan"
+    <app-header 
+        :img="headerItem.img" 
+        :url="headerItem.url"
+        :icon="headerItem.icon"
+        :name="headerItem.name"
+        :title="headerItem.title"
+        :slogan="headerItem.slogan"
     />
     
 
