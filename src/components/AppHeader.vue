@@ -52,7 +52,7 @@
                 {{ name }}
             </div>
 
-            <h1>
+            <h1 class="overflow-hidden">
                 {{ title }}
             </h1>
 

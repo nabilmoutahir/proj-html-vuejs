@@ -26,7 +26,7 @@
 
         <div class="section-container">
             <div class="text-center py-3"> 
-                <h2 class="text-white">
+                <h2 class="text-white overflow-hidden">
                     {{ title }}
                 </h2>
 
