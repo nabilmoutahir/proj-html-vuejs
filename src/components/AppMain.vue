@@ -10,6 +10,8 @@
 
     import AppMainAdvice from './AppMainAdvice.vue';
 
+    import AppMainForm from './AppMainForm.vue';
+
     export default {
         data (){
             return {
@@ -23,6 +25,7 @@
             AppMainRecent,
             AppMainQuote,
             AppMainAdvice,
+            AppMainForm
         }
     }
 
@@ -40,6 +43,8 @@
     <AppMainQuote/>
 
     <AppMainAdvice/>
+    
+    <AppMainForm/>
 
 </template>
 
