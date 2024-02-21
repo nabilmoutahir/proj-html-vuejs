@@ -6,7 +6,8 @@
         props: {
             img: String,
             url: String,
-            icon: String,
+            cross: String,
+            menu: String,
             name: String,
             title: String,
             slogan: String,
@@ -25,25 +26,31 @@
             </div>
 
             <div class="d-flex align-items-center">
-                <div>
-                    {{ icon }}
-                </div>
+                <a class="px-3" href="">
+                    <div :class="cross">
+                    </div>
+                </a>
 
-                <div>
-                    {{ icon }}
-                </div>
+                <a class="px-3" href="">
+                    <div :class="menu">
+                    </div>
+                </a>
             </div>
         </div>
     
         <div>
             <div>
-                <div>
-                    SQUARE
-                </div>
+                <a href="">
+                    <div class="square m-2 rounded">
+                    
+                    </div>
+                </a>
 
-                <div>
-                   SQUARE 
-                </div>
+                <a href="">
+                    <div class="square m-2 rounded">
+                
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -74,6 +81,18 @@
         background-size: cover;
         color: white;
         font-size: small;
+
+        // .square{
+        //     height: 30px;
+        //     aspect-ratio: 1;
+        //     background-color: white;
+        //     position: sticky;
+        // }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
         img{
             height: 40px;

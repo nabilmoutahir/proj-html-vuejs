@@ -41,9 +41,9 @@
 
         <div class="d-flex justify-content-center align-content-center pb-5">
             <div class="form-section col-4">
-                <input type="text" class="form-control my-3 py-3" id="formGroupExampleInput" placeholder="NAME*">
-                <input type="text" class="form-control my-3 py-3" id="formGroupExampleInput" placeholder="EMAIL*">
-                <input type="text" class="form-control my-3 py-3" id="formGroupExampleInput" placeholder="PHONE">
+                <input type="text" class="form-control my-3 py-3" placeholder="NAME*">
+                <input type="text" class="form-control my-3 py-3" placeholder="EMAIL*">
+                <input type="text" class="form-control my-3 py-3" placeholder="PHONE">
                 <button class="btn btn-danger my-3 py-3 fs-5" type="button">LET'S TALK</button>
             </div>
         </div>

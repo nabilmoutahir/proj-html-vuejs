@@ -3,8 +3,9 @@
   
   import AppMain from './components/AppMain.vue';
 
-  import AppComps from './components/AppComps.vue';
+  import AppHeaderComp from './components/AppHeaderComp.vue';
 
+  import AppFooterComp from './components/AppFooterComp.vue';
 
   export default {
 
@@ -15,8 +16,9 @@
     },
 
     components: {
-      AppComps, 
-      AppMain
+      AppHeaderComp, 
+      AppMain,
+      AppFooterComp
 
     }
 
@@ -28,10 +30,12 @@
 <template>
 
   <!-- APP HEADER -->
-    <app-comps></app-comps>
+    <app-header-comp></app-header-comp>
 
   <!-- APP MAIN -->
     <app-main></app-main>
+
+    <app-footer-comp></app-footer-comp>
 
 </template>
 
