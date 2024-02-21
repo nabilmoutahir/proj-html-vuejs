@@ -7,6 +7,10 @@
 
             return {
 
+                title:"About Me",
+
+                job:"UI & UX EXPERT",
+
                 store,
 
             }
@@ -18,46 +22,61 @@
 </script>
 
 <template>
-    <main>
-    
-        <div class="text-center"> 
-            <h2>
-                About Me
-            </h2>
+    <section>
 
-            <div>
-                UI & UX EXPERT
+        <div class="section-container py-5">
+            <div class="text-center py-3"> 
+                <h2 class="text-white">
+                    {{ title }}
+                </h2>
+
+                <div class="sub-title">
+                    {{ job }}
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center py-3">
+                <div class="col-3">
+                    <p>
+                        {{ store.shortText }}
+                    </p>
+
+                    <p>
+                        {{ store.longText }}
+                    </p>
+                </div>
+
+                <div class="col-3">
+                    <p>
+                        {{ store.longText }}   
+                    </p>
+
+                    <p>
+                        {{ store.shortText }}
+                    </p>
+                </div>
             </div>
         </div>
 
-        <div class="row d-flex justify-content-center">
-            <div class="col-3">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eveniet, blanditiis labore cumque culpa dignissimos neque illo asperiores modi iure laudantium tenetur porro tempora eos quos hic ipsa iste nihil.
-                </p>
-
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla accusamus vero cum earum velit, eius quis provident delectus, distinctio voluptas porro. Non quidem fuga sit voluptatem accusantium sint molestiae optio amet ducimus veniam? Aliquid, quis. Quisquam, doloribus laudantium delectus ipsam perferendis provident officia similique voluptatem odio nisi mollitia nam!
-                </p>
-            </div>
-
-            <div class="col-3">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque nulla accusamus vero cum earum velit, eius quis provident delectus, distinctio voluptas porro. Non quidem fuga sit voluptatem accusantium sint molestiae optio amet ducimus veniam? Aliquid, quis. Quisquam, doloribus laudantium delectus ipsam perferendis provident officia similique voluptatem odio nisi mollitia nam!
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eveniet, blanditiis labore cumque culpa dignissimos neque illo asperiores modi iure laudantium tenetur porro tempora eos quos hic ipsa iste nihil.
-                </p>
-            </div>
-        </div>
-
-        <link rel="stylesheet" href="">
-
-    </main>
+    </section>
 </template>
 
 <style lang="scss" scoped>
 
+    section{
+        font-size: small;
+
+        background-color: #20232c;
+
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+        .sub-title{
+            color: #667290;
+        }
+
+        p {
+            color: #3d6dab;
+        }
+    }
 
 </style>
