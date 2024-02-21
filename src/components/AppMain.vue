@@ -8,6 +8,8 @@
 
     import AppMainQuote from './AppMainQuote.vue';
 
+    import AppMainAdvice from './AppMainAdvice.vue';
+
     export default {
         data (){
             return {
@@ -20,6 +22,7 @@
             AppMainWhy,
             AppMainRecent,
             AppMainQuote,
+            AppMainAdvice,
         }
     }
 
@@ -35,6 +38,8 @@
     <AppMainRecent/>
 
     <AppMainQuote/>
+
+    <AppMainAdvice/>
 
 </template>
 
